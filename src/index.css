@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Thai:wght@300;400;500;600;700&family=Sarabun:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Neko Wealth — cute warm cream / gold / amber palette */
+    --background: 42 60% 95%;
+    --foreground: 28 35% 18%;
+    --card: 44 70% 99%;
+    --card-foreground: 28 35% 18%;
+    --popover: 44 70% 99%;
+    --popover-foreground: 28 35% 18%;
+    --primary: 36 88% 50%;
+    --primary-foreground: 40 60% 99%;
+    --secondary: 42 55% 91%;
+    --secondary-foreground: 30 30% 28%;
+    --muted: 42 45% 92%;
+    --muted-foreground: 32 18% 48%;
+    --accent: 40 80% 86%;
+    --accent-foreground: 30 40% 24%;
+    --destructive: 0 72% 56%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 40 40% 85%;
+    --input: 40 40% 85%;
+    --ring: 36 88% 50%;
+    --chart-1: 36 88% 50%;
+    --chart-2: 28 72% 52%;
+    --chart-3: 45 80% 56%;
+    --chart-4: 18 70% 54%;
+    --chart-5: 52 76% 58%;
+    --radius: 1rem;
+    --font-heading: 'Noto Serif Thai', 'Lora', serif;
+    --font-body: 'Sarabun', sans-serif;
+    --font-display: 'Noto Serif Thai', 'Lora', serif;
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    --sidebar-background: 42 55% 93%;
+    --sidebar-foreground: 30 30% 28%;
+    --sidebar-primary: 36 88% 50%;
+    --sidebar-primary-foreground: 40 60% 99%;
+    --sidebar-accent: 42 55% 91%;
+    --sidebar-accent-foreground: 30 30% 28%;
+    --sidebar-border: 40 40% 85%;
+    --sidebar-ring: 36 88% 50%;
+  }
+
+  .dark {
+    --background: 28 22% 10%;
+    --foreground: 42 35% 90%;
+    --card: 28 20% 13%;
+    --card-foreground: 42 35% 90%;
+    --popover: 28 20% 13%;
+    --popover-foreground: 42 35% 90%;
+    --primary: 38 85% 58%;
+    --primary-foreground: 28 22% 10%;
+    --secondary: 28 16% 18%;
+    --secondary-foreground: 42 30% 84%;
+    --muted: 28 14% 17%;
+    --muted-foreground: 38 16% 58%;
+    --accent: 34 30% 22%;
+    --accent-foreground: 42 30% 84%;
+    --destructive: 0 62% 46%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 30 14% 20%;
+    --input: 30 14% 20%;
+    --ring: 38 85% 58%;
+    --chart-1: 38 85% 58%;
+    --chart-2: 28 70% 54%;
+    --chart-3: 45 76% 58%;
+    --chart-4: 18 66% 52%;
+    --chart-5: 52 72% 60%;
+    --sidebar-background: 28 20% 12%;
+    --sidebar-foreground: 42 30% 84%;
+    --sidebar-primary: 38 85% 58%;
+    --sidebar-primary-foreground: 28 22% 10%;
+    --sidebar-accent: 28 16% 18%;
+    --sidebar-accent-foreground: 42 30% 84%;
+    --sidebar-border: 30 14% 20%;
+    --sidebar-ring: 38 85% 58%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground font-body;
+  }
+}
